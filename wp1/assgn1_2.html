@@ -1,0 +1,146 @@
+<html>
+    <style>
+        .button{
+            color: black;
+            background-color:ivory;
+            border-radius: 20px;
+            font-size: large;
+            padding: 5px;
+        }   
+        .button:hover{
+            color: white;
+            background-color: blue;
+        }
+        td{
+            border: 0px;
+            font-size: larger;
+        }
+        #heading{
+            text-align: center;
+        }
+        body{
+            /*background-attachment: fixed;
+            background-image: url('https://www.impactbnd.com/hubfs/shutterstock_512032090.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;*/
+        }
+        div.footer{
+            background-color: rgba(0,0,0,0.6);
+            color: white;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: fixed;        
+       }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: white;
+            text-decoration: underline ;
+        }
+        div.main{
+            width: auto;
+            height: auto;
+            display: block;
+            position: static;
+        }
+        div.main::after {
+            content: "";
+            background: url('https://www.impactbnd.com/hubfs/shutterstock_512032090.jpg');
+            opacity: 0.25;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;   
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body>
+        <div class="main">
+            <h1 id="heading"><b>JOB APPLICATION</b></h1>
+            <marquee style="background-color: rgba(0,0,0,0.6); color: white;">Share price up by 5.3% after successful run of xyz prototype &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Balance Sheet of FY2019-20 to be released this week</marquee>
+            <p style="font-size: large; margin-bottom: 0px;"><i>All fields marked with * are mandatory.</i></p>
+        <form>
+            <table style="margin-left:auto; margin-right:auto" border="10" cellpadding="5" cellspacing="5">
+                <tr>
+                    <td style="width: 260px;">Name*</td>
+                    <td><input type="text" name="name" required style="width: 260px"></td>
+                    <td style="width: 260px;">Birthdate* </td>
+                    <td><input type="date" name="birthdate" required style="width: 260px"></td>
+                </tr>
+                <tr>
+                    <td>Address </td>
+                    <td colspan="3"><input type="text" name="Address" style="width: 814px"></td>
+                </tr>
+                <tr>
+                    <td>Email id*</td>
+                    <td><input type="email" name="email" required style="width: 260px;"></td>
+                    <td style="width: 260px;">Mobile Number* </td>
+                    <td><input type="tel" name="Mobile" style="width: 260px;" required placeholder="091-9876543210" pattern="[0-9]{3}-[0-9]{10}"></td>
+                </tr>
+                <tr>
+                    <td>Designation* </td>
+                    <td>
+                        <select style="width: 260px;" required multiple>
+                            <option>Juniour Developer</option>
+                            <option>Senior Project Manager</option>
+                            <option>Tester</option>
+                            <option>Director</option>
+                            <option>Business Analyst</option>
+                            <option>Human Resource Manager</option>
+                        </select>
+                </td>
+                <td>Highest Qualification*</td>
+                <td>
+                    <input list="qualification" style="width: 260px;" required>
+                    <datalist id="qualification">
+                        <option value="Bachelors Degree"></option>
+                        <option value="Masters Degree"></option>
+                        <option value="Diploma"></option>
+                        <option value="Doctorate"></option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Experience(in number of months)*</td>
+                <td><input type="number" name="experience" style="width: 260px;" required></td>
+                <td >Expected Salary </td>
+                <td><input type="number" name="salary" style="width: 260px;"></td>
+            </tr>
+            <tr>
+                <td>References/Comments/Questions*</td>
+                <td><textarea name="refernces" rows="3" cols="34" required ></textarea></td>
+                <td rowspan="2">Are you willing to relocate?</td>
+                <td rowspan="2">
+                    <input type="radio" value="Yes" name="relocation">Yes<br>
+                    <input type="radio" value="Yes(within India)" name="relocation">Yes(But only within India)<br>
+                    <input type="radio" value="No" name="relocation">No<br>
+                    <input type="radio" value="Not Sure" name="relocation">Not Sure
+                </td>
+            </tr>
+            <tr>
+                <td>Attachments </td>
+                <td><input type="file" name="attachments"></td>
+            </tr>
+        </table>
+        <p style="text-align: center;">
+            <input align="middle" type="reset" value="Clear All" class="button">
+            <input type="submit" value="Send Application" class="button">
+        </p>
+    </form>
+        <div class="footer">
+            <h2 style="padding-left: 10px; margin-top: 7px;">Explore </h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.google.com/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.google.com/">Products</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.google.com/">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.google.com/">FAQs</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="assgn1_2.html">Career</a>
+            <p style="text-align: center; padding-left: 10px; padding-bottom: 5px; margin-bottom: 4px;">Copyright &copy; 2020 COMPANY ABC</p>
+        </div>
+    </div>
+    </body>
+    </html>

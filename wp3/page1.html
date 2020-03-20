@@ -1,0 +1,79 @@
+<html>
+<head>
+<style>
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.header{
+    border-radius: 7px;
+    position:relative;
+    background-color: green;
+    height: 100px;
+    padding-bottom: 10px;
+}
+li.menu{
+    font-size: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: #FADCDC;
+    color: black;   
+    border-radius: 6px;
+    padding-left: 8px;
+    list-style-type: none;
+}
+ 
+.menu:hover{
+    background-color: green;
+    color: white;
+}
+div.sidebar{
+    float: left;
+    width: 27%;
+}
+
+div.content{
+    float: left;
+    padding-left: 25px;
+    width: 70%;   
+}
+
+a:link{
+    color: black;
+}
+a:visited{
+    color: black;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="header">
+        <h1 style="margin-bottom: 0px; margin-left: 10px; font-size: 50px; color: white; padding-top: 5px; padding-left: 5px;">Welcome to My Homepage</h1>
+        <p style="margin-top: 0px; margin-left: 10px; font-size: 24px; color: white; padding-left: 5px;">Use the menu to select different Stylesheets</p>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li class="menu">Stylesheet 1</li>
+                <li class="menu">Stylesheet 2</li>
+                <li class="menu">Stylesheet 3</li>
+                <li class="menu">Stylesheet 4</li>
+                <li class="menu">No Stylesheet</li>
+            </ul>
+        </div>
+    <div class="content">
+        <h1 style="font-size: 58px">Same Page Different Stylesheets</h1>
+        <p style="font-size: 30px">This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p>
+        <a href="https://www.google.com/" style="font-size: 30px">Stylesheet1, </a>
+        <a href="https://www.google.com/" style="font-size: 30px">Stylesheet2, </a>
+        <a href="https://www.google.com/" style="font-size: 30px">Stylesheet3, </a>
+        <a href="https://www.google.com/" style="font-size: 30px">Stylesheet4</a>
+        <h1 style="font-size: 58px">No styles</h1>
+        <p style="font-size: 30px">This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks with no stylesheet: </p>
+        <a href="https://www.google.com/" style="font-size: 30px">No Stylesheet.</a>
+    </div>
+</body>
+</html>
